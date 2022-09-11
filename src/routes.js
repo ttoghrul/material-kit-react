@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import Products from './pages/Products';
 import DashboardApp from './pages/DashboardApp';
 import OrgChartPage from "./pages/OrgChartPage";
+import Profile from "./pages/Profile";
 
 // ----------------------------------------------------------------------
 
@@ -24,6 +25,8 @@ export default function Router() {
         { path: 'user', element: <User /> },
         { path: 'products', element: <Products /> },
         { path: 'blog', element: <Blog /> },
+        { path: 'orgchart', element: <OrgChartPage /> },
+        { path: 'profile', element: <Profile /> },
       ],
     },
     {
@@ -33,10 +36,6 @@ export default function Router() {
     {
       path: 'register',
       element: <Register />,
-    },
-    {
-      path: 'orgchart',
-      element: <OrgChartPage />,
     },
     {
       path: '/',

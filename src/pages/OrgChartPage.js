@@ -1,7 +1,7 @@
 import {Link as RouterLink} from 'react-router-dom';
 // @mui
 import {styled} from '@mui/material/styles';
-import {Card, Link, Container, Typography} from '@mui/material';
+import {Card, Link, Container, Typography, Stack, Button} from '@mui/material';
 // hooks
 import {useEffect, useState} from "react";
 import * as d3 from 'd3';
@@ -12,6 +12,7 @@ import Logo from '../components/Logo';
 // sections
 import AuthSocial from '../sections/auth/AuthSocial';
 import {OrgChartComponent} from "./OrgChart";
+import Iconify from "../components/Iconify";
 
 
 // ----------------------------------------------------------------------
@@ -82,6 +83,7 @@ export default function OrgChartPage() {
     }
 
     useEffect(() => {
+        // TODO replace csv with Demo Data
         d3.csv(
             'https://raw.githubusercontent.com/bumbeishvili/sample-data/main/org.csv'
         ).then(data => {
@@ -95,19 +97,21 @@ export default function OrgChartPage() {
                 <HeaderStyle>
                     <Logo/>
                 </HeaderStyle>
-                <Container maxWidth="sm">
-                    <ContentStyle>
-                        <div>
-                            Click node to trigger action in parent or &nbsp;
-                            <button onClick={() => addNode()}>add node as root's child</button>
-                            <OrgChartComponent
-                                /* eslint-disable */
-                                setClick={click => (addNodeChildFunc = click)}
-                                onNodeClick={onNodeClick}
-                                data={data}
-                            />
-                        </div>
-                    </ContentStyle>
+                <Container>
+                    <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}/>
+                    <Card>
+
+
+                            <div>
+                                <OrgChartComponent
+                                    /* eslint-disable */
+                                    setClick={click => (addNodeChildFunc = click)}
+                                    onNodeClick={onNodeClick}
+                                    data={data}
+                                />
+                            </div>
+                        
+                    </Card>
                 </Container>
             </RootStyle>
         </Page>

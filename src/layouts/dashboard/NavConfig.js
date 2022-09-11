@@ -38,7 +38,13 @@ const navConfig = [
   },
   {
     title: 'Org Chart',
-    path: '/orgchart',
+    path: '/dashboard/orgchart',
+    /* TODO: Add relevant icon */
+    icon: getIcon('eva:alert-triangle-fill'),
+  },
+  {
+    title: 'Profile',
+    path: '/dashboard/profile',
     /* TODO: Add relevant icon */
     icon: getIcon('eva:alert-triangle-fill'),
   },

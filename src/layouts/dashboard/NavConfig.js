@@ -37,6 +37,12 @@ const navConfig = [
     icon: getIcon('eva:person-add-fill'),
   },
   {
+    title: 'Org Chart',
+    path: '/orgchart',
+    /* TODO: Add relevant icon */
+    icon: getIcon('eva:alert-triangle-fill'),
+  },
+  {
     title: 'Not found',
     path: '/404',
     icon: getIcon('eva:alert-triangle-fill'),

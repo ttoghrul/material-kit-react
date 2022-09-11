@@ -13,7 +13,7 @@ const LANGS = [
     label: 'English',
     icon: '/static/icons/ic_flag_en.svg',
   },
-  {
+  {/* TODO change languages to Azerbaijani and Russian */
     value: 'de',
     label: 'German',
     icon: '/static/icons/ic_flag_de.svg',

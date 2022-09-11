@@ -43,8 +43,8 @@ const navConfig = [
     icon: getIcon('eva:alert-triangle-fill'),
   },
   {
-    title: 'Profile',
-    path: '/dashboard/profile',
+    title: 'Account',
+    path: '/dashboard/account',
     /* TODO: Add relevant icon */
     icon: getIcon('eva:alert-triangle-fill'),
   },

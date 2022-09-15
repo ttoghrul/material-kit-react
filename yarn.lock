@@ -1321,6 +1321,11 @@
   "resolved" "https://registry.npmjs.org/@faker-js/faker/-/faker-7.5.0.tgz"
   "version" "7.5.0"
 
+"@fontsource/roboto@^4.5.8":
+  "integrity" "sha512-CnD7zLItIzt86q4Sj3kZUiLcBk1dSk81qcqgMGaZe7SQ1P8hFNxhMl5AZthK1zrDM5m74VVhaOpuMGIL4gagaA=="
+  "resolved" "https://registry.npmjs.org/@fontsource/roboto/-/roboto-4.5.8.tgz"
+  "version" "4.5.8"
+
 "@hookform/resolvers@^2.9.3":
   "integrity" "sha512-BloehX3MOLwuFEwT4yZnmolPjVmqyn8VsSuodLfazbCIqxBHsQ4qUZsi+bvNNCduRli1AGWFrkDLGD5QoNzsoA=="
   "resolved" "https://registry.npmjs.org/@hookform/resolvers/-/resolvers-2.9.7.tgz"

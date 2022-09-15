@@ -11,15 +11,15 @@ import {BlogPostCard, BlogPostsSort, BlogPostsSearch} from '../sections/@dashboa
 // mock
 import POSTS from '../_mock/blog';
 import AccountProfile from "./AccountProfile";
+import AccountSettings from "./AccountSettings";
 
 // ----------------------------------------------------------------------
 
 // TODO Remove unused imports and code functionality
-const SORT_OPTIONS = [
-    {value: 'latest', label: 'Latest'},
-    {value: 'popular', label: 'Popular'},
-    {value: 'oldest', label: 'Oldest'},
-];
+const SORT_OPTIONS = [{value: 'latest', label: 'Latest'}, {value: 'popular', label: 'Popular'}, {
+    value: 'oldest',
+    label: 'Oldest'
+},];
 
 // ----------------------------------------------------------------------
 
@@ -31,8 +31,7 @@ export default function Account() {
         setValue(newValue);
     };
 
-    return (
-        <Page title="Account">
+    return (<Page title="Account">
             <Container>
                 <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
                     <Typography variant="h4" gutterBottom>
@@ -53,12 +52,13 @@ export default function Account() {
                             <TabPanel value="1">
                                 <AccountProfile/>
                             </TabPanel>
-                            <TabPanel value="2">Item Twos</TabPanel>
+                            <TabPanel value="2">
+                                <AccountSettings/>
+                            </TabPanel>
                             <TabPanel value="3">Item Three</TabPanel>
                         </TabContext>
                     </Box>
                 </Stack>
             </Container>
-        </Page>
-    );
+        </Page>);
 }

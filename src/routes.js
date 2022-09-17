@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import Products from './pages/Products';
 import DashboardApp from './pages/DashboardApp';
 import OrgChartPage from "./pages/OrgChartPage";
+import CalendarPage from "./pages/CalendarPage";
 import Account from "./pages/Account";
 
 // ----------------------------------------------------------------------
@@ -26,6 +27,7 @@ export default function Router() {
         { path: 'products', element: <Products /> },
         { path: 'blog', element: <Blog /> },
         { path: 'orgchart', element: <OrgChartPage /> },
+        { path: 'calendar', element: <CalendarPage /> },
         { path: 'account', element: <Account /> },
       ],
     },

@@ -31,22 +31,28 @@ const navConfig = [
     path: '/login',
     icon: getIcon('eva:lock-fill'),
   },
-  {
+  /* {
     title: 'register',
     path: '/register',
     icon: getIcon('eva:person-add-fill'),
-  },
+  }, */
   {
     title: 'Org Chart',
     path: '/dashboard/orgchart',
     /* TODO: Add relevant icon */
-    icon: getIcon('eva:alert-triangle-fill'),
+    icon: getIcon('eva:bar-chart-fill'),
+  },
+  {
+    title: 'Calendar',
+    path: '/dashboard/calendar',
+    /* TODO: Add relevant icon */
+    icon: getIcon('eva:calendar-fill'),
   },
   {
     title: 'Account',
     path: '/dashboard/account',
     /* TODO: Add relevant icon */
-    icon: getIcon('eva:alert-triangle-fill'),
+    icon: getIcon('eva:person-fill'),
   },
   {
     title: 'Not found',

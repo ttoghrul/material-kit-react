@@ -100,17 +100,15 @@ export default function OrgChartPage() {
                 <Container>
                     <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}/>
                     <Card>
+                        <div>
+                            <OrgChartComponent
+                                /* eslint-disable */
+                                setClick={click => (addNodeChildFunc = click)}
+                                onNodeClick={onNodeClick}
+                                data={data}
+                            />
+                        </div>
 
-
-                            <div>
-                                <OrgChartComponent
-                                    /* eslint-disable */
-                                    setClick={click => (addNodeChildFunc = click)}
-                                    onNodeClick={onNodeClick}
-                                    data={data}
-                                />
-                            </div>
-                        
                     </Card>
                 </Container>
             </RootStyle>

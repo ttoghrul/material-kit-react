@@ -49,6 +49,12 @@ const navConfig = [
     icon: getIcon('eva:calendar-fill'),
   },
   {
+    title: 'Time Off',
+    path: '/dashboard/timeoff',
+    /* TODO: Add relevant icon */
+    icon: getIcon('eva:clock-fill'),
+  },
+  {
     title: 'Account',
     path: '/dashboard/account',
     /* TODO: Add relevant icon */

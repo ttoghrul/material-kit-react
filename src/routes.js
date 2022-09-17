@@ -13,6 +13,7 @@ import DashboardApp from './pages/DashboardApp';
 import OrgChartPage from "./pages/OrgChartPage";
 import CalendarPage from "./pages/CalendarPage";
 import Account from "./pages/Account";
+import TimeOff from "./pages/TimeOff";
 
 // ----------------------------------------------------------------------
 
@@ -28,6 +29,7 @@ export default function Router() {
         { path: 'blog', element: <Blog /> },
         { path: 'orgchart', element: <OrgChartPage /> },
         { path: 'calendar', element: <CalendarPage /> },
+        { path: 'timeoff', element: <TimeOff /> },
         { path: 'account', element: <Account /> },
       ],
     },

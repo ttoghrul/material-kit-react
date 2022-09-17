@@ -72,85 +72,89 @@ export default function AccountProfile() {
 
     return (
         <Page title="AccountProfile">
-            <Container>
-                <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{px: 1, py: 2}}>
-                    <Card sx={{width: 350, height: 500, boxShadow: 4}}>
-                        <Box sx={{p: 15, pb: 1, borderRadius: '50%', width: 150}} justifyContent="center" dir="ltr">
-                            <Avatar sx={{height: '170px', width: '170px'}} alt="Remy Sharp"
-                                    src="https://res.cloudinary.com/minimal-ui/image/upload/v1614655910/upload_minimal/avatar/minimal_avatar.jpg"/>
-                        </Box>
-                    </Card>
-                    <Card sx={{width: 600, height: 500, pt: 2, boxShadow: 4}}>
-                        <Box
-                            component="form"
-                            sx={{
-                                '& .MuiTextField-root': {m: 2, width: '25ch'},
-                            }}
-                            noValidate
-                            autoComplete="off"
-                        >
-                            <TextField
-                                id="outlined-required"
-                                label="Name"
-                                defaultValue="Toghrul Taghiyev"
-                            />
-                            <TextField
-                                id="outlined-required"
-                                label="Email Address"
-                                defaultValue="ttoghrul@gmail.com"
-                            />
-                            <TextField
-                                id="outlined-required"
-                                label="Phone Number"
-                                defaultValue="+994-706771237"
-                            />
-                            <TextField
-                                id="outlined-required"
-                                label="Address"
-                                defaultValue="M.Mushvig street"
-                            />
-                            <TextField
-                                id="outlined-required"
-                                label="Country"
-                                select
-                                value={country}
-                                onChange={handleChange}
-                                defaultValue="Azerbaijan"
+            <Box sx={{flexGrow: 1}}>
+                <Grid container spacing={8}>
+                    <Grid item xs={4}>
+                        <Card sx={{width: 350, height: 500, boxShadow: 4}}>
+                            <Box sx={{borderRadius: '50%', height: '210px', width: '210px', border: '1px dashed grey', p: 2}} justifyContent="center" dir="ltr">
+                                <Avatar sx={{height: '170px', width: '170px'}} alt="Toghrul Taghiyev"
+                                        src="https://res.cloudinary.com/minimal-ui/image/upload/v1614655910/upload_minimal/avatar/minimal_avatar.jpg"/>
+                            </Box>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={8}>
+                        <Card sx={{width: 600, height: 500, pt: 2, boxShadow: 4}}>
+                            <Box
+                                component="form"
+                                sx={{
+                                    '& .MuiTextField-root': {m: 2, width: '25ch'},
+                                }}
+                                noValidate
+                                autoComplete="off"
                             >
-                                {countries.map((option) => (
-                                    <MenuItem key={option.code} value={option.name}>
-                                        {option.name}
-                                    </MenuItem>
-                                ))}
-                            </TextField>
-                            <TextField
-                                id="outlined-required"
-                                label="State/Region"
-                                defaultValue="Absheron"
-                            />
-                            <TextField
-                                id="outlined-required"
-                                label="City"
-                                defaultValue="Baku"
-                            />
-                            <TextField
-                                id="outlined-required"
-                                label="Zip/Code"
-                                defaultValue="AZ 1073"
-                            />
-                        </Box>
-                        <Box sx={{m: 2, width: '53ch'}}>
-                            <TextField
-                                id="outlined-required"
-                                label="About"
-                                multiline
-                                fullWidth
-                                defaultValue="Nullam cursus lacinia erat. Vestibulum suscipit nulla quis orci. Fusce a quam."
-                            />
-                        </Box>
-                    </Card>
-                </Stack>
-            </Container>
+                                <TextField
+                                    id="outlined-required"
+                                    label="Name"
+                                    defaultValue="Toghrul Taghiyev"
+                                />
+                                <TextField
+                                    id="outlined-required"
+                                    label="Email Address"
+                                    defaultValue="ttoghrul@gmail.com"
+                                />
+                                <TextField
+                                    id="outlined-required"
+                                    label="Phone Number"
+                                    defaultValue="+994-706771237"
+                                />
+                                <TextField
+                                    id="outlined-required"
+                                    label="Address"
+                                    defaultValue="M.Mushvig street"
+                                />
+                                <TextField
+                                    id="outlined-required"
+                                    label="Country"
+                                    select
+                                    value={country}
+                                    onChange={handleChange}
+                                    defaultValue="Azerbaijan"
+                                >
+                                    {countries.map((option) => (
+                                        <MenuItem key={option.code} value={option.name}>
+                                            {option.name}
+                                        </MenuItem>
+                                    ))}
+                                </TextField>
+                                <TextField
+                                    id="outlined-required"
+                                    label="State/Region"
+                                    defaultValue="Absheron"
+                                />
+                                <TextField
+                                    id="outlined-required"
+                                    label="City"
+                                    defaultValue="Baku"
+                                />
+                                <TextField
+                                    id="outlined-required"
+                                    label="Zip/Code"
+                                    defaultValue="AZ 1073"
+                                />
+                            </Box>
+                            <Box sx={{m: 2, width: '53ch'}}>
+                                <TextField
+                                    id="outlined-required"
+                                    label="About"
+                                    multiline
+                                    fullWidth
+                                    defaultValue="Nullam cursus lacinia erat. Vestibulum suscipit nulla quis orci. Fusce a quam."
+                                />
+                            </Box>
+                        </Card>
+                    </Grid>
+                </Grid>
+            </Box>
         </Page>
     );
 }

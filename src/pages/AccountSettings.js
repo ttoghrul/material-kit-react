@@ -32,7 +32,7 @@ export default function AccountSettings() {
         <Page title="AccountSettings">
             <Container>
                 <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{px: 1, py: 2}}>
-                    <Card sx={{width: 1000, height: 500, boxShadow: 4, p:2}}>
+                    <Card sx={{width: 1000, height: 500, boxShadow: 4, p: 2}}>
                         <Box sx={{width: '100%', maxWidth: 500}}>
                             <Typography sx={{
                                 fontSize: 1,
@@ -45,9 +45,70 @@ export default function AccountSettings() {
                                 ACTIVITY
                             </Typography>
                         </Box>
-                        <Box sx={{width: '100%', maxWidth: 500}}>
-                            <Switch defaultChecked />
+                        <Grid container sx ={{pt: 2}}>
+                            <Grid item>
+                                <Switch defaultChecked/>
+                            </Grid>
+                            <Grid item>
+                                <Typography sx={{pt: 0.8}}>Email me when someone comments only article</Typography>
+                            </Grid>
+                        </Grid>
+                        <Grid container sx ={{pt: 2}}>
+                            <Grid item>
+                                <Switch defaultChecked/>
+                            </Grid>
+                            <Grid item>
+                                <Typography sx={{pt: 0.8}}>
+                                    Email me when someone answers on my form</Typography>
+                            </Grid>
+                        </Grid>
+                        <Grid container sx ={{pt: 2}}>
+                            <Grid item>
+                                <Switch defaultChecked/>
+                            </Grid>
+                            <Grid item>
+                                <Typography sx={{pt: 0.8}}>Email me when someone follows me</Typography>
+                            </Grid>
+                        </Grid>
+
+                        <Box sx={{width: '100%', maxWidth: 500, pt: 4}}>
+                            <Typography sx={{
+                                fontSize: 1,
+                                color: "#637381",
+                                fontWeight: 700,
+                                lineHeight: 1.5,
+                            }}
+                                        font-family={"Public Sans"}
+                                        variant="h6" gutterBottom>
+                                APPLICATION
+                            </Typography>
                         </Box>
+                        <Grid container sx ={{pt: 2}}>
+                            <Grid item>
+                                <Switch defaultChecked/>
+                            </Grid>
+                            <Grid item>
+                                <Typography sx={{pt: 0.8}}>News and announcements</Typography>
+                            </Grid>
+                        </Grid>
+                        <Grid container sx ={{pt: 2}}>
+                            <Grid item>
+                                <Switch defaultChecked/>
+                            </Grid>
+                            <Grid item>
+                                <Typography sx={{pt: 0.8}}>
+                                    Weekly product updates</Typography>
+                            </Grid>
+                        </Grid>
+                        <Grid container sx ={{pt: 2}}>
+                            <Grid item>
+                                <Switch defaultChecked/>
+                            </Grid>
+                            <Grid item>
+                                <Typography sx={{pt: 0.8}}>
+                                    Weekly blog digest</Typography>
+                            </Grid>
+                        </Grid>
                     </Card>
                 </Stack>
             </Container>

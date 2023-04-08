@@ -1,6 +1,4 @@
 import {useState} from "react";
-import {Link as RouterLink} from 'react-router-dom';
-import PropTypes from "prop-types";
 // material
 import {
     Grid,
@@ -14,7 +12,7 @@ import {
     Card,
     Avatar,
     TextField,
-    MenuItem
+    MenuItem, CardContent
 } from '@mui/material';
 import {TabContext, TabList, TabPanel} from "@mui/lab";
 // components
@@ -70,16 +68,41 @@ export default function AccountProfile() {
         setCountry(event.target.value);
     };
 
+    /* <Box
+                                    sx={{
+                                        borderRadius: '50%',
+                                        justifyContent: 'right',
+                                        alignItems: 'right',
+                                        width: '10rem',
+                                        height: '10rem',
+                                        border: '1px dashed grey'
+                                    }}> */
     return (
         <Page title="AccountProfile">
             <Box sx={{flexGrow: 1}}>
                 <Grid container spacing={8}>
                     <Grid item xs={4}>
-                        <Card sx={{width: 350, height: 500, boxShadow: 4}}>
-                            <Box sx={{borderRadius: '50%', height: '210px', width: '210px', border: '1px dashed grey', p: 2}} justifyContent="center" dir="ltr">
-                                <Avatar sx={{height: '170px', width: '170px'}} alt="Toghrul Taghiyev"
-                                        src="https://res.cloudinary.com/minimal-ui/image/upload/v1614655910/upload_minimal/avatar/minimal_avatar.jpg"/>
-                            </Box>
+                        <Card sx={{
+                            width: 350,
+                            height: 500,
+                            boxShadow: 4,
+                            justifyContent: 'center',
+                            alignItems: 'center'
+                        }}>
+                            <div
+                                style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    height: '75vh',
+                                }}
+                            >
+                                {}
+
+                                <Avatar sx={{height: '160px', width: '160px'}} alt="Toghrul Taghiyev"
+                                        src="/static/mock-images/avatars/avatar_default.jpg"/>
+                                {/* </Box> */}
+                            </div>
                         </Card>
                     </Grid>
                     <Grid item xs={8}>

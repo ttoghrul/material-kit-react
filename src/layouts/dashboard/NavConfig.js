@@ -59,12 +59,7 @@ const navConfig = [
     path: '/dashboard/account',
     /* TODO: Add relevant icon */
     icon: getIcon('eva:person-fill'),
-  },
-  {
-    title: 'Not found',
-    path: '/404',
-    icon: getIcon('eva:alert-triangle-fill'),
-  },
+  }
 ];
 
 export default navConfig;
